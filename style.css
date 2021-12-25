@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.clock{
+background-color: rgb(24, 21, 21);
+/* background-image: url(./images/clock.jpg); */
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 10px solid whitesmoke;
+    box-shadow: 5px 5px  50px rgb(7, 118, 209) inset;
+
+}
+.a {
+    position: absolute;
+    top: 31%;
+    color: white;
+    z-index: 900;
+}
+.b {
+    position: absolute;
+    top: 50%;
+    left:42%;
+    color: white;
+    z-index: 900;
+}
+
+.c {
+    position: absolute;
+    top: 50%;
+    right: 42%;
+    color: white;
+    z-index: 900;
+}
+.d {
+    position: absolute;
+    top: 65%;
+    color: white;
+    z-index: 900;
+}
+
+
+
+.dot{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    background-color: thistle;
+    border-radius: 50%;
+    z-index: 900;
+}
+
+
+.hr{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    /* background-color: red; */
+    border-radius: 50%;
+    /* margin: 10px; */
+}
+
+.min{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    /* background-color: red; */
+    border-radius: 50%;
+    /* margin: 10px; */
+}
+
+.sec{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    /* background-color: red; */
+    border-radius: 50%;
+
+}
+
+.hr::after{
+    content: " ";
+    background-color: royalblue;
+    height: 52px;
+    position: absolute;
+    width: 6px;
+    border-radius: 4px;
+}
+
+.min::after{
+    content: " ";
+    background-color: white;
+    position:absolute;
+    height: 75px;
+    width: 3px;
+    /* z-index: 900; */
+    
+
+}
+
+.sec::after{
+    content:" ";
+    background-color: red;
+    position: absolute;
+    height: 85px;
+    width: 3px;
+}
+
+
+.btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 70px;
+    box-shadow: 2px 3px 3px black;
+}
+
+.btn:hover{
+    background-color: coral;
+}
+
+
+
